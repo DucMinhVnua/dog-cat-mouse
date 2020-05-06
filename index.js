@@ -1,11 +1,14 @@
 var dog = require('./dog');
 var cat = require('./cat');
-var mouse = require('./mouse.js');
+var mouse = require('./mouse');
 
 var shiba = new dog('shiba');
-var mickey = new cat('mickey');
+var tom = new cat('tom');
+var Mouse = new mouse('jerry');
 
-shiba.sayHi();
-console.log('----guwwww!!!----')
-shiba.eat(mickey);
-console.log(shiba);
+try{
+	tom.eat(Mouse);
+	console.log(tom);
+ }catch{
+ 	console.log('tom chi an duoc mouse');
+ }
